@@ -1,4 +1,4 @@
-body {background:#000 url(img/bg/hex1.png) center top repeat; font: 11px Verdana, Arial, Helvetica, sans-serif; color:#5c5a56}
+body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verdana, Arial, Helvetica, sans-serif; color:#5c5a56}
 * {margin: 0px;	padding: 0px;}
 .clear {clear:both;}
 .clear2 {width:595px; clear:left; float:right;}
@@ -9,7 +9,24 @@ body {background:#000 url(img/bg/hex1.png) center top repeat; font: 11px Verdana
  top:-160px;
  left:+80px;
 }
-
+#name_and_sec{
+ position:relative;
+}
+#name_and_sec_left{
+ position:absolute;
+ top:0;
+ left:0;
+ width:430px;
+ height:100px;
+}
+#name_and_sec_right{
+ background:#0F0;
+ position:absolute;
+ top:0;
+ right:0;
+ width:430px;
+ height:100px;
+}
 .img-shadow {
   float:left;
   background: url(img/shadow/shadowAlpha.png) no-repeat bottom right !important;
