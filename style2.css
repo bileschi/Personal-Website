@@ -28,7 +28,7 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verda
  height:100px;
 }
 #list_container{
- background:#EEF;
+ /*background:#EEF;*/
  position:absolute;
  top:414px;
  left:0;
@@ -40,8 +40,7 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verda
  background:#CCF;
  float:left;
  width:851px;
- margin: 0px;
- padding: 0px;
+ margin: 0px 0px 30px 0px;
 }
 #proj_icon {
  float:left;
