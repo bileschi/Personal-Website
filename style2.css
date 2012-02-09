@@ -2,7 +2,7 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verda
 * {margin: 0px;	padding: 0px;}
 .clear {clear:both;}
 .clear2 {width:595px; clear:left; float:right;}
-#wrap {width:851px; margin:auto; background:#FFF;}
+#wrap {width:851px; margin:auto; background:#FFF; position:relative;}
 #header {background:#F00 no-repeat; height:314px;}
 #header_avatar {
  position:relative;
@@ -20,13 +20,50 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verda
  height:100px;
 }
 #name_and_sec_right{
- background:#0F0;
+ background:#CFC;
  position:absolute;
  top:0;
  right:0;
  width:430px;
  height:100px;
 }
+#list_container{
+ background:#EEF;
+ position:absolute;
+ top:414px;
+ left:0;
+ width:851px;
+}
+
+
+#proj_item{
+ background:#CCF;
+ float:left;
+ width:851px;
+ margin: 0px;
+ padding: 0px;
+}
+#proj_icon {
+ float:left;
+ background:#FCC;
+ width:150px;
+}
+#proj_descrip_box {
+ float:left;
+ background:#FFC;
+ width:551px;
+}
+#proj_title {
+	font: bold 22px "Trebuchet MS", Verdana, sans-serif; color: #000;
+}
+#proj_blurb {}
+#proj_link_box { 
+ float:left;
+ background:#CFF;
+ width:150px;
+}
+
+
 .img-shadow {
   float:left;
   background: url(img/shadow/shadowAlpha.png) no-repeat bottom right !important;
