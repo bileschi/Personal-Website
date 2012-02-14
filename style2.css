@@ -34,46 +34,50 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 11px Verda
  left:0;
  width:851px;
 }
-#proj_item{
+
+.proj_item{
  background:#CCF;
  float:left;
  width:851px;
  height:150px;
  margin: 0px 0px 30px 0px;
+ cursor:pointer; 
+ border:5px solid #000;
 }
-#proj_icon {
+
+.proj_icon {
  float:left;
  background:#FCC;
  width:150px;
  height:150px;
 }
-#proj_descrip_box {
+.proj_descrip_box {
  float:left;
  background:#FFC;
  width:551px;
  height:150px;
  overflow:hidden;
 }
-#proj_title {
+.proj_title {
 	border-radius: 4px 4px 0 0 ;
 	position: relative;
 	font: bold 22px "Trebuchet MS", Verdana, sans-serif; color: #000;
 	background:#CFC;
 	height:30px;
 }
-#proj_blurb {
+.proj_blurb {
 	height:105px;
  	background:#CCC;
     overflow:hidden;
 }
-#proj_more_info_box {
+.proj_more_info_box {
 	height:15px;
  	background:#999;
     overflow:hidden;
 
 }
 
-#proj_link_box { 
+.proj_link_box { 
  float:left;
  background:#CFF;
  width:150px;
