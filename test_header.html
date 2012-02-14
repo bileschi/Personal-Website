@@ -323,7 +323,7 @@ function expand_proj_item (proj_item) {
 	proj_item.height("auto");
 	proj_item.css("background",accent_color)
 	proj_item.find(".proj_descrip_box").height("auto");
-	proj_item.css("border", "5px solid " + accent_color );
+	//proj_item.css("border", "5px solid " + accent_color );
 	proj_item.find(".proj_blurb").height("auto");
 	proj_item.find(".proj_more_info_box").height("auto");
     proj_item.find(".proj_more_info_box").text("This one was clicked");
@@ -341,8 +341,8 @@ function expand_proj_item (proj_item) {
 // function collapses all project items, showing only summary content
 function collapse_all_proj_items () {
 	$(".proj_item").height(150);
-	$(".proj_item").css("background","")
-	$(".proj_item").css("border","0px hidden #FFF");
+	//$(".proj_item").css("background","#FFF")
+	//$(".proj_item").css("border","0px hidden #FFF");
 	$(".proj_descrip_box").height(150);
 	$(".proj_blurb").height(105);
 	$(".proj_more_info_box").height(15);
@@ -352,7 +352,7 @@ function collapse_all_proj_items () {
 
  $(".proj_item").live("click",function (event) {
  	console.log("handeling click.");
- 	collapse_all_proj_items();
+ 	//collapse_all_proj_items();
  	expand_proj_item($(this));
  	console.log("click handle complete.");
 });

@@ -36,13 +36,13 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 }
 
 .proj_item{
- /*background:#CCF;*/
+ background:#EEE;
  float:left;
  width:851px;
  height:150px;
  margin: 0px 0px 30px 0px;
  cursor:pointer; 
- border:5px solid #000;
+ border:1px solid #222;
 }
 
 .proj_icon {
