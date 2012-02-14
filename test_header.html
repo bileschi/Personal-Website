@@ -34,11 +34,12 @@ Projects, Ideas, Comments
 
 	<div id="proj_descrip_box">
 		<div id="proj_title">
-		LIDAR / Optical Geometric Autocalibration.
+		LIDAR / Optical Geometric Autocalibration
 		</div>
 		<div id="proj_blurb">
 		Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as an personal interest project, as I wanted to use the data produced by the MIT team's DARPA grand-challenge data (link?) in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an improved technique to determine image depth-discontinuities. (link?)
 		</div>
+		<div id="proj_more_info_box">... click for more ...	</div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -62,6 +63,8 @@ Projects, Ideas, Comments
 In the mid '00s, most visual object detection methods began with a set of positive examples of the target object of interest.  These were images that were cropped neatly around the object, for instance the pedestrians in Dalal + Triggs or the faces of Viola + Jones. It had come to my attention that no one had done a comprehensive study of the effect of the crop scale on detector performance.  The most interesting result of this work is that if you have a fixed sample budget, where each sample returns an average brightness at some position and scale, the best sampling strategy is a multi-scale one, not a strategy that collects a raster at a preferred scale.
 
 		</div>
+		<div id="proj_more_info_box"></div>
+
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -84,6 +87,7 @@ In the mid '00s, most visual object detection methods began with a set of positi
 Lessons learned from studies of biological vision systems have led to several advances in developing scene understanding systems.  CBCL's standard model was using a version of alternating match-and-pool stages before and independant from SIFT, HoG, and Pyramid match.  This PAMI paper summarizes a few years of this work, and it's ties to the biology.  My role was in the tailoring of the general system to applications in object detection, recognition, and scene understanding. 
 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -105,6 +109,7 @@ Lessons learned from studies of biological vision systems have led to several ad
 The mid '00s were a period under which the vision community coalesced around image features with very self similar qualities.  Most production systems were using some variant of histograms of oriented energy as input to their generic machine learning systems.  This project aimed to attempt to build image features which capture information that we know the human visual system is snappy at acquiring.  Specifically, detectors for continuity, closure, symmetry, and repetition were created.  It was shown that of these, continuity detection is key to improving object detection performance in real systems.  In a side project that was never condensed into a prose artifact, along with Aude Olivia I was able to show that a simple histogram of oriented energy feature was able to account for much of the psychophysical results in human symmetry detection. 
 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -126,6 +131,7 @@ The mid '00s were a period under which the vision community coalesced around ima
 My Ph.D. thesis summarized my work in biological image understanding and it's application to real world unconstrained object recognition.  The thesis began with the acquisition and labeling of around 3,500 high resolution images of Cambridge taken at street level from a digital camera.  These images were hand labeled by a team of coached workers, who took care to label the 9 target objects using a standardized set of rules.  I then demonstrated a complete end-to-end system capable of labeling a variety of different types of objects in the StreetScenes database using general machine learning tools and several different image representations.  This served as a the platform for a number of studies into image features, context, search and retrieval, and so on. 
 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -146,6 +152,7 @@ My Ph.D. thesis summarized my work in biological image understanding and it's ap
 This project explored different ways of combining selectivity and invariance building computational structures in the computer vision domain. 
 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -166,6 +173,7 @@ This project explored different ways of combining selectivity and invariance bui
 		<div id="proj_blurb">
 In this controversial project, I worked with Lior Wolf to show that context is a useful feature, but only so far.  We claimed that once the image features were strong enough, contextual cues were no longer helpful.  For instance, if you clearly see a 1987 Buick Regal hanging in the sky, yes it's out of context, but it is in fact a car.  The contextual cues are useful only in so far as they can help the observer to focus limited computational resources where they are most likely to summarize the scene quickly.  If the detected objects are clear and well described, contextual cues are no longer helpful in the refining of the object detections. 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -186,6 +194,7 @@ In this controversial project, I worked with Lior Wolf to show that context is a
 		<div id="proj_blurb">
 Early face detection and recognition systems took a global view of the face-as-image.  The entire image was represented as a vector and then processed.  This work described a system wherein individual facial characteristics, such as the eye, nose, etc. were represented separately, using a floating system of parts which is more invariant to transformations of the 3D face.  It seems that modern systems, as of 2012, pretty much all use such an approach.
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -202,11 +211,12 @@ Early face detection and recognition systems took a global view of the face-as-i
 
 	<div id="proj_descrip_box">
 		<div id="proj_title">
-			Combining Variable Selection and Dimensionality Reduction
+			Variable Selection and Dimensionality Reduction
 		</div>
 		<div id="proj_blurb">
 This was a continuing work I did with Lior Wolf when he first arrived at MIT.  The work surrounded a linear algebra based algorithm for reducing the size of data while retaining information important to the classification task.  It was interesting, but mostly his baby.
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -223,11 +233,12 @@ This was a continuing work I did with Lior Wolf when he first arrived at MIT.  T
 
 	<div id="proj_descrip_box">
 		<div id="proj_title">
-			A Unified Vision System using Poggio's Standard Model
+			A Unified Vision System using Poggio's Model
 		</div>
 		<div id="proj_blurb">
 Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt to build an end-to-end vision system including detecting a variety of different types of objects (cars, trees, buildings, pedestrians, etc.), and including contextual cues for improved computational performance.  The system performed well at the time, and led to a oral presentation at that year's BMVC.
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -248,6 +259,7 @@ Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt t
 		<div id="proj_blurb">
 Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Thinks like dirfull, a dir command in matlab that also holds full path names; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, I think there are still some gems in there that I will continue to use until MATLAB reproduces them all in their std lib.
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -269,6 +281,7 @@ Most of my work in graduate school was done in MATLAB.  Looking back, I wish I h
 
 Dominion is a multi-player card game where players take turns building a deck of cards.  The rules are clear, there is no randomness, but the game is variable in that the set of available cards changes each game.  The goal of this project was to explore the relative value of different agent-training algorithms in the Dominion domain.  Specifically, I was interested if it would be possible to use genetic algorithms etc to train an automated player that was good enough to play against a medicore human, or better!  It was also an opportunity to build something larger than a single-use script in python. 
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -284,11 +297,12 @@ Dominion is a multi-player card game where players take turns building a deck of
 
 	<div id="proj_descrip_box">
 		<div id="proj_title">
-			Intelligent Ad Purchasing Agents in a Real Time Second Price Auction
+			Real Time Display Ad Purchasing Agents
 		</div>
 		<div id="proj_blurb">
 DataXu is a small Boston company founded around the idea of using big data and machine learning to develop strong bidding strategies in the real-time auctions for display advertisements on the internet.  The ongoing project is to design, develop, maintain and improve performance bidding strategies in this volitile setting.  Our customers, the advertisers, wish to place advertisements to achieve specific goals, such as low ad-cost-per-conversion view or click, while meeting constraints such as a smooth spending profile and frequency limits per user.  
 		</div>
+		<div id="proj_more_info_box"></div>
 	</div>
 	<div id="proj_link_box">
 	<a href="http://fake.site.com"> PDF link </a>
@@ -299,5 +313,27 @@ DataXu is a small Boston company founded around the idea of using big data and m
 
 </div>
 </div>
+
+<!-- Loads jQuery -->
+<script type="text/javascript" src="jQuery.js"></script>
+<!-- sets click handlers for proj_item s -->
+<script type="text/javascript">
+$("#proj_item").live("click",function (event) {
+
+//$(this).animate({
+//  height: "toggle"
+//  , opacity: "toggle"
+//}, "slow" );
+
+  $(this).height("auto");
+  $(this).find("#proj_descrip_box").height("auto");
+  $(this).find("#proj_blurb").height("auto");
+  $(this).find("#proj_more_info_box").height("auto");
+  $(this).find("#proj_icon").text($(this).find("#proj_blurb").height());
+//  $(this).find("proj_blurb").height("relative");
+//  $(this).find("proj_more_info_box").text("I set text by clicking");
+});
+</script>
+
 </body>
 </html>
