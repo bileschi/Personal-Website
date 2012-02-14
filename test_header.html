@@ -316,11 +316,12 @@ DataXu is a small Boston company founded around the idea of using big data and m
 <!-- sets click handlers for proj_item s -->
 <script type="text/javascript">
 // function expands a project item, showing all internal content
-var accent_color = "#F00"
+var accent_color = "#DDD"
 
 function expand_proj_item (proj_item) {
  	console.log("inside expand.");
 	proj_item.height("auto");
+	proj_item.css("background",accent_color)
 	proj_item.find(".proj_descrip_box").height("auto");
 	proj_item.css("border", "5px solid " + accent_color );
 	proj_item.find(".proj_blurb").height("auto");
@@ -340,6 +341,7 @@ function expand_proj_item (proj_item) {
 // function collapses all project items, showing only summary content
 function collapse_all_proj_items () {
 	$(".proj_item").height(150);
+	$(".proj_item").css("background","")
 	$(".proj_item").css("border","0px hidden #FFF");
 	$(".proj_descrip_box").height(150);
 	$(".proj_blurb").height(105);
