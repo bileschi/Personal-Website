@@ -47,10 +47,12 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 
 .proj_icon {
  float:left;
- background:#FCC;
- width:150px;
- height:150px;
+ background:#FFF;
+ width:148px;
+ height:148px;
+ border: 1px solid #000;
 }
+
 .proj_descrip_box {
  float:left;
  /*background:#FFC;*/
