@@ -43,7 +43,7 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 }
 
 #cc_container{
- background:#555;
+ /*background:#555;*/
  float:left;
  width:851px;
  height:100px;
@@ -51,35 +51,30 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  position:absolute;
 }
 
-
-#cc_proj{
- background:#E00;
+.cc_button{
  float:left;
  /*position:absolute;
  bottom:0;
  left:0;*/
- width:283px;
- height:100px;
+ cursor:pointer;
+ -moz-border-radius: 25px;
+ border-radius: 25px; 
+ width:257px;
+ height:84px;
+ margin: 0px 5px 0px 5px;
+ padding: 8px 8px 8px 8px;
+}
+
+#cc_proj{
+ background:#E00;
 }
 
 #cc_ident{
  background:#FFCC33;
- /*position:absolute;
- bottom:0;
- left:283;*/
- float:left;
- width:283px;
- height:100px;
 }
 
 #cc_idea{
  background:#11C;
- /*position:absolute;
- bottom:0;
- left:0;*/
- float:left;
- width:283px;
- height:100px;
 }
 
 #list_container{

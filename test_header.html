@@ -25,9 +25,9 @@ Projects, Identities, Ideas
 </div>
 
 <div id="cc_container">
-	<div id="cc_proj"></div>
-	<div id="cc_ident"></div>
-	<div id="cc_idea"></div>
+	<div id="cc_proj" class="cc_button">Projects</div>
+	<div id="cc_ident" class="cc_button">Identities</div>
+	<div id="cc_idea" class="cc_button">Ideas</div>
 </div>
 
 <div id="list_container">
@@ -384,6 +384,107 @@ $(".proj_item").live("click",function (event) {
  	console.log("click handle complete.");
  	console.log("-----------------------");
 });
+
+
+function select_proj(){
+	$("#cc_proj").css("background","#E00")
+	$("#cc_proj").css("opacity","1")
+}
+
+function unselect_proj(){
+	$("#cc_proj").css("background","#E88080")
+	$("#cc_proj").css("opacity","0.5")
+}
+
+function select_ident(){
+	$("#cc_ident").css("background","#FFcc33")
+	$("#cc_ident").css("opacity","1")
+}
+
+function unselect_ident(){
+	$("#cc_ident").css("background","#FFE69a")
+	$("#cc_ident").css("opacity","0.5")
+}
+
+function select_idea(){
+	$("#cc_idea").css("background","#11C")
+	$("#cc_idea").css("opacity","1")
+}
+
+function unselect_idea(){
+	$("#cc_idea").css("background","#8888e0")
+	$("#cc_idea").css("opacity","0.5")
+}
+
+// click handlers for the 3 column buttons
+$("#cc_proj").live("click",function(event) {
+ 	// check current select status
+ 	var is_selected = $(this).attr(exp_status_key);
+ 	if(typeof is_selected === "undefined") {
+ 		is_selected = false;
+ 	}
+ 	// if expanded, select and remember
+ 	if(is_selected != false) {
+	 	console.log(" unselecting...");
+ 		unselect_proj();
+ 		$(this).removeAttr(exp_status_key);
+ 	} else { 	// else, select and remember
+	 	console.log(" selecting...");
+ 		select_proj();
+ 		unselect_ident();
+ 		unselect_idea();
+ 		$(this).attr(exp_status_key, true);
+ 	}
+})
+
+// click handlers for the 3 column buttons
+$("#cc_ident").live("click",function(event) {
+ 	// check current select status
+ 	var is_selected = $(this).attr(exp_status_key);
+ 	if(typeof is_selected === "undefined") {
+ 		is_selected = false;
+ 	}
+ 	// if expanded, select and remember
+ 	if(is_selected != false) {
+	 	console.log(" unselecting...");
+ 		unselect_ident();
+ 		$(this).removeAttr(exp_status_key);
+ 	} else { 	// else, select and remember
+	 	console.log(" selecting...");
+ 		unselect_proj();
+ 		select_ident();
+ 		unselect_idea();
+ 		$(this).attr(exp_status_key, true);
+ 	}
+})
+
+
+// click handlers for the 3 column buttons
+$("#cc_idea").live("click",function(event) {
+ 	// check current select status
+ 	var is_selected = $(this).attr(exp_status_key);
+ 	if(typeof is_selected === "undefined") {
+ 		is_selected = false;
+ 	}
+ 	// if expanded, select and remember
+ 	if(is_selected != false) {
+	 	console.log(" unselecting...");
+ 		unselect_idea();
+ 		$(this).removeAttr(exp_status_key);
+ 	} else { 	// else, select and remember
+	 	console.log(" selecting...");
+ 		unselect_proj();
+ 		unselect_idea();
+ 		select_idea();
+ 		$(this).attr(exp_status_key, true);
+ 	}
+})
+
+// set initial state
+ var exp_status_key = "data-attr-is-selected";
+ $("#cc_proj").attr(exp_status_key, true);
+ unselect_ident();
+ unselect_idea();
 
 
 $(document).ready(function() {
