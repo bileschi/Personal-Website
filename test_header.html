@@ -37,15 +37,14 @@ Projects, Identities, Ideas
 		LIDAR / Optical Geometric Autocalibration
 		</div>
 		<div class="proj_blurb">
-		Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as an personal interest project, as I wanted to use the data produced by the MIT team's DARPA grand-challenge data (link?) in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an improved technique to determine image depth-discontinuities. (link?)
-		</div>
+		Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as an personal interest project, as I wanted to use the data produced by the  <a href="http://grandchallenge.mit.edu"> MIT team's DARPA grand-challenge data </a> in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an <a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/iccv07hoiem.pdf">improved technique</a> to determine image depth-discontinuities.</div>
 		<div class="proj_more_info_box">... click for more ...	</div>
 	</div>
 	<div class="proj_link_box">
-	<a href="http://fake.site.com"> ICCV (PDF) </a><p>
+	<a href="./papers/lidar_iccv_2008.pdf"> ICCV (PDF) </a><p>
 	<a href="http://fake.site.com"> Source (MATLAB) </a><p>
-	<a href="http://fake.site.com"> Darpa GC </a><p>
-	<a href="http://fake.site.com"> Videos </a><p>
+	<a href="http://en.wikipedia.org/wiki/DARPA_Grand_Challenge"> Darpa GC </a><p>
+	<a href="http://www.youtube.com/playlist?list=PL69755A3E0671306C&feature=plcp"> Videos </a><p>
 
 	</div>
 </div>
@@ -271,7 +270,7 @@ Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt t
 			Personal Matlab Library
 		</div>
 		<div class="proj_blurb">
-Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Thinks like dirfull, a dir command in matlab that also holds full path names; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, I think there are still some gems in there that I will continue to use until MATLAB reproduces them all in their std lib.
+Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Things like dirfull, a dir command that also keeps track of full path names and other useful system file info; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, there are still some gems in there that I will continue to use until MATLAB reproduces the functionality in their std lib.
 		</div>
 		<div class="proj_more_info_box"></div>
 	</div>
@@ -320,7 +319,7 @@ function expand_proj_item (proj_item) {
 	//proj_item.css("border", "5px solid " + accent_color );
 	proj_item.find(".proj_blurb").height("auto");
 	proj_item.find(".proj_more_info_box").height("auto");
-    proj_item.find(".proj_more_info_box").text("");
+    proj_item.find(".proj_more_info_box").text("start date:   last edit date:");
 	// don't squish below 150px.   I don't know how to check what the hight /would be/ so my
 	// only choice is to change to auto, check the height, and change back.
 	if(proj_item.find(".proj_descrip_box").height() < 150) {
