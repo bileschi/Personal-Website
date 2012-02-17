@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- copyright Stanley Bileschi 2012 --> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -30,283 +31,358 @@ Projects, Identities, Ideas
 	<div id="cc_idea" class="cc_button">Ideas</div>
 </div>
 
-<div id="list_container">
+<div id="proj_list_container" class="list_container">
 
-<hr>
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/lidar_optical.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-		LIDAR / Optical Geometric Autocalibration
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/lidar_optical.png" width="148" height="148">
 		</div>
-		<div class="proj_blurb">
-		Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as an personal interest project, as I wanted to use the data produced by the  <a href="http://grandchallenge.mit.edu"> MIT team's DARPA grand-challenge data </a> in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an <a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/iccv07hoiem.pdf">improved technique</a> to determine image depth-discontinuities.</div>
-		<div class="proj_more_info_box">... click for more ...	</div>
-	</div>
-	<div class="proj_link_box">
-	<a href="./papers/lidar_iccv_2008.pdf"> ICCV (PDF) </a><p>
-	<a href="http://fake.site.com"> Source (MATLAB) </a><p>
-	<a href="http://en.wikipedia.org/wiki/DARPA_Grand_Challenge"> Darpa GC </a><p>
-	<a href="http://www.youtube.com/playlist?list=PL69755A3E0671306C&feature=plcp"> Videos </a><p>
 
+		<div class="item_descrip_box">
+			<div class="item_title">
+			LIDAR / Optical Geometric Autocalibration
+			</div>
+			<div class="item_blurb">
+			Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as a personal interest project, as I wanted to use the data produced by the  <a href="http://grandchallenge.mit.edu"> MIT team's DARPA grand-challenge data </a> in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an <a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/iccv07hoiem.pdf">improved technique</a> to determine image depth-discontinuities.</div>
+			<div class="item_more_info_box">... click for more ...	</div>
+		</div>
+		<div class="item_link_box">
+		<a href="./papers/lidar_iccv_2008.pdf"> ICCV (PDF) </a><p>
+		<a href="http://fake.site.com"> Source (MATLAB) </a><p>
+		<a href="http://en.wikipedia.org/wiki/DARPA_Grand_Challenge"> Darpa GC </a><p>
+		<a href="http://www.youtube.com/playlist?list=PL69755A3E0671306C&feature=plcp"> Videos </a><p>
+
+		</div>
+	</div>
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/dataxu.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Real Time Display Ad Purchasing Agents
+			</div>
+			<div class="item_blurb">	
+				DataXu is a small Boston company founded around the idea of using big data and machine learning to develop strong bidding strategies in the real-time auctions for display advertisements on the internet.  The ongoing project is to design, develop, maintain and improve performance bidding strategies in this volitile setting.  Our customers, the advertisers, wish to place advertisements to achieve specific goals, such as low ad-cost-per-conversion view or click, while meeting constraints such as a smooth spending profile and frequency limits per user.  
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/multi_scale.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Scale in visual object detection
+			</div>
+			<div class="item_blurb">
+				In the mid '00s, most visual object detection methods began with a set of positive examples of the target object of interest.  These were images that were cropped neatly around the object, for instance the pedestrians in Dalal + Triggs or the faces of Viola + Jones. It had come took my attention that no one had done a comprehensive study of the effect of the crop scale on detector performance.  The most interesting result of this work is that if you have a fixed sample budget, where each sample returns an average brightness at some position and scale, the best sampling strategy is a multi-scale one, not a strategy that collects a raster at a preferred scale.
+
+			</div>
+			<div class="item_more_info_box"></div>
+
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/biologically_motivated.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Biologically motivated object recognition
+			</div>
+			<div class="item_blurb">
+				Lessons learned from studies of biological vision systems have led to several advances in developing scene understanding systems.  CBCL's standard model was using a version of alternating match-and-pool stages before and independant from SIFT, HoG, and Pyramid match.  This PAMI paper summarizes a few years of this work, and it's ties to the biology.  My role was in the tailoring of the general system to applications in object detection, recognition, and scene understanding. 
+
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/gestalt.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Gestalt Image Representations
+			</div>
+			<div class="item_blurb">
+				The mid '00s were a period under which the vision community coalesced around image features with very self similar qualities.  Most production systems were using some variant of histograms of oriented energy as input to their generic machine learning systems.  This project aimed to attempt to build image features which capture information that we know the human visual system is snappy at acquiring.  Specifically, detectors for continuity, closure, symmetry, and repetition were created.  It was shown that of these, continuity detection is key to improving object detection performance in real systems.  In a side project that was never condensed into a prose artifact, along with Aude Olivia I was able to show that a simple histogram of oriented energy feature was able to account for much of the psychophysical results in human symmetry detection. 
+
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/street_scenes.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Ph.D. Thesis: StreetScenes
+			</div>
+			<div class="item_blurb">
+				My Ph.D. thesis summarized my work in biological image understanding and it's application to real world unconstrained object recognition.  The thesis began with the acquisition and labeling of around 3,500 high resolution images of Cambridge taken at street level from a digital camera.  These images were hand labeled by a team of coached workers, who took care to label the 9 target objects using a standardized set of rules.  I then demonstrated a complete end-to-end system capable of labeling a variety of different types of objects in the StreetScenes database using general machine learning tools and several different image representations.  This served as a the platform for a number of studies into image features, context, search and retrieval, and so on. 
+
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/dali_room.jpg" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				A Critical View of Context
+			</div>
+			<div class="item_blurb">
+				In this controversial project, I worked with Lior Wolf to show that context is a useful feature, but only so far.  We claimed that once the image features were strong enough, contextual cues were no longer helpful.  For instance, if you clearly see a 1987 Buick Regal hanging from a crane, yes it's out of context, but it is in fact a car.  The contextual cues are useful only in so far as they can help the observer to focus limited computational resources where they are most likely to summarize the scene quickly.  If the detected objects are clear and well described, contextual cues are no longer helpful in the refining of the object detections. 
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/hierachical_concat.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Hierarchical Vision System Architecture
+			</div>
+			<div class="item_blurb">
+				This project explored different ways of combining selectivity and invariance building computational structures in the computer vision domain. 
+
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/face_part.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Component Based Face Detection
+			</div>
+			<div class="item_blurb">
+				Early face detection and recognition systems took a global view of the face-as-image.  The entire image was represented as a vector and then processed.  This work described a system wherein individual facial characteristics, such as the eye, nose, etc. were represented separately, using a floating system of parts which is more invariant to transformations of the 3D face.  It seems that modern systems, as of 2012, pretty much all use such an approach.
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/mit_seal.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Variable Selection and Dimensionality Reduction
+			</div>
+			<div class="item_blurb">
+				This was a continuing work I did with Lior Wolf when he first arrived at MIT.  The work surrounded a linear algebra based algorithm for reducing the size of data while retaining information important to the classification task.  It was interesting, but mostly his baby.
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/unified_detection.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				A Unified Vision System using Poggio's Model
+			</div>
+			<div class="item_blurb">
+				Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt to build an end-to-end vision system including detecting a variety of different types of objects (cars, trees, buildings, pedestrians, etc.), and including contextual cues for improved computational performance.  The system performed well at the time, and led to a oral presentation at that year's BMVC.
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/matlab_logo.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Personal Matlab Library
+			</div>
+			<div class="item_blurb">
+				Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Things like dirfull, a dir command that also keeps track of full path names and other useful system file info; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, there are still some gems in there that I will continue to use until MATLAB reproduces the functionality in their std lib.
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
+	</div>
+
+
+
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/dominion_hand.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Dominion AI
+			</div>
+			<div class="item_blurb">
+
+				Dominion is a multi-player card game where players take turns building a deck of cards.  The rules are clear, there is no randomness, but the game is variable in that the set of available cards changes each game.  The goal of this project was to explore the relative value of different agent-training algorithms in the Dominion domain.  Specifically, I was interested if it would be possible to use genetic algorithms etc to train an automated player that was good enough to play against a medicore human, or better!  It was also an opportunity to build something larger than a single-use script in python. 
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="http://fake.site.com"> PDF link </a>
+		</div>
 	</div>
 </div>
 
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/dataxu.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Real Time Display Ad Purchasing Agents
+<div id="ident_list_container" class="list_container">
+	<div id="cv_ident_item" class="ident_item">
+		<div class="item_icon">
+			CV icon goes here.
+			<!--<img src="./img/item-icons/proj/lidar_optical.png" width="148" height="148">-->
 		</div>
-		<div class="proj_blurb">	
-DataXu is a small Boston company founded around the idea of using big data and machine learning to develop strong bidding strategies in the real-time auctions for display advertisements on the internet.  The ongoing project is to design, develop, maintain and improve performance bidding strategies in this volitile setting.  Our customers, the advertisers, wish to place advertisements to achieve specific goals, such as low ad-cost-per-conversion view or click, while meeting constraints such as a smooth spending profile and frequency limits per user.  
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Curriculum Vitae / Resume
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
 		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/multi_scale.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Scale in visual object detection
+		<div class="item_link_box">
+		<a href="./papers/cv_2012_academic.doc"> CV (.doc)</a><p>
+		<a href="./papers/cv_2012_engineer.doc"> Resume (.doc)</a><p>
 		</div>
-		<div class="proj_blurb">
-In the mid '00s, most visual object detection methods began with a set of positive examples of the target object of interest.  These were images that were cropped neatly around the object, for instance the pedestrians in Dalal + Triggs or the faces of Viola + Jones. It had come to my attention that no one had done a comprehensive study of the effect of the crop scale on detector performance.  The most interesting result of this work is that if you have a fixed sample budget, where each sample returns an average brightness at some position and scale, the best sampling strategy is a multi-scale one, not a strategy that collects a raster at a preferred scale.
+	</div>
 
+	<div id="fb_ident_item" class="ident_item">
+		<div class="item_icon">
+			Facebook Icon goes here.
 		</div>
-		<div class="proj_more_info_box"></div>
 
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/biologically_motivated.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Biologically motivated object recognition
+		<div class="item_descrip_box">
+			<div class="item_title">
+				My Public Facebook Page
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
 		</div>
-		<div class="proj_blurb">
-Lessons learned from studies of biological vision systems have led to several advances in developing scene understanding systems.  CBCL's standard model was using a version of alternating match-and-pool stages before and independant from SIFT, HoG, and Pyramid match.  This PAMI paper summarizes a few years of this work, and it's ties to the biology.  My role was in the tailoring of the general system to applications in object detection, recognition, and scene understanding. 
-
+		<div class="item_link_box">
 		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/gestalt.png" width="148" height="148">
 	</div>
 
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Gestalt Image Representations
+	<div id="tw_ident_item" class="ident_item">
+		<div class="item_icon">
+			Twitter Icon goes here.
 		</div>
-		<div class="proj_blurb">
-The mid '00s were a period under which the vision community coalesced around image features with very self similar qualities.  Most production systems were using some variant of histograms of oriented energy as input to their generic machine learning systems.  This project aimed to attempt to build image features which capture information that we know the human visual system is snappy at acquiring.  Specifically, detectors for continuity, closure, symmetry, and repetition were created.  It was shown that of these, continuity detection is key to improving object detection performance in real systems.  In a side project that was never condensed into a prose artifact, along with Aude Olivia I was able to show that a simple histogram of oriented energy feature was able to account for much of the psychophysical results in human symmetry detection. 
 
+		<div class="item_descrip_box">
+			<div class="item_title">
+				My Public Twitter
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
 		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/street_scenes.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Ph.D. Thesis: StreetScenes
+		<div class="item_link_box">
 		</div>
-		<div class="proj_blurb">
-My Ph.D. thesis summarized my work in biological image understanding and it's application to real world unconstrained object recognition.  The thesis began with the acquisition and labeling of around 3,500 high resolution images of Cambridge taken at street level from a digital camera.  These images were hand labeled by a team of coached workers, who took care to label the 9 target objects using a standardized set of rules.  I then demonstrated a complete end-to-end system capable of labeling a variety of different types of objects in the StreetScenes database using general machine learning tools and several different image representations.  This served as a the platform for a number of studies into image features, context, search and retrieval, and so on. 
+	</div>
 
+	<div id="g_ident_item" class="ident_item">
+		<div class="item_icon">
+			Google Plus Icon goes here.
 		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
 
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/dali_room.jpg" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			A Critical View of Context
+		<div class="item_descrip_box">
+			<div class="item_title">
+				My Public Google Plus
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
 		</div>
-		<div class="proj_blurb">
-In this controversial project, I worked with Lior Wolf to show that context is a useful feature, but only so far.  We claimed that once the image features were strong enough, contextual cues were no longer helpful.  For instance, if you clearly see a 1987 Buick Regal hanging from a crane, yes it's out of context, but it is in fact a car.  The contextual cues are useful only in so far as they can help the observer to focus limited computational resources where they are most likely to summarize the scene quickly.  If the detected objects are clear and well described, contextual cues are no longer helpful in the refining of the object detections. 
+		<div class="item_link_box">
 		</div>
-		<div class="proj_more_info_box"></div>
 	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/hierachical_concat.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Hierarchical Vision System Architecture
-		</div>
-		<div class="proj_blurb">
-This project explored different ways of combining selectivity and invariance building computational structures in the computer vision domain. 
-
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/face_part.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Component Based Face Detection
-		</div>
-		<div class="proj_blurb">
-Early face detection and recognition systems took a global view of the face-as-image.  The entire image was represented as a vector and then processed.  This work described a system wherein individual facial characteristics, such as the eye, nose, etc. were represented separately, using a floating system of parts which is more invariant to transformations of the 3D face.  It seems that modern systems, as of 2012, pretty much all use such an approach.
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-<hr>
-
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/mit_seal.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Variable Selection and Dimensionality Reduction
-		</div>
-		<div class="proj_blurb">
-This was a continuing work I did with Lior Wolf when he first arrived at MIT.  The work surrounded a linear algebra based algorithm for reducing the size of data while retaining information important to the classification task.  It was interesting, but mostly his baby.
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-<hr>
-
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/unified_detection.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			A Unified Vision System using Poggio's Model
-		</div>
-		<div class="proj_blurb">
-Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt to build an end-to-end vision system including detecting a variety of different types of objects (cars, trees, buildings, pedestrians, etc.), and including contextual cues for improved computational performance.  The system performed well at the time, and led to a oral presentation at that year's BMVC.
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-<hr>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/matlab_logo.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Personal Matlab Library
-		</div>
-		<div class="proj_blurb">
-Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Things like dirfull, a dir command that also keeps track of full path names and other useful system file info; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, there are still some gems in there that I will continue to use until MATLAB reproduces the functionality in their std lib.
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
-<hr>
-
-
-<div class="proj_item">
-	<div class="proj_icon">
-		<img src="./img/item-icons/proj/dominion_hand.png" width="148" height="148">
-	</div>
-
-	<div class="proj_descrip_box">
-		<div class="proj_title">
-			Dominion AI
-		</div>
-		<div class="proj_blurb">
-
-Dominion is a multi-player card game where players take turns building a deck of cards.  The rules are clear, there is no randomness, but the game is variable in that the set of available cards changes each game.  The goal of this project was to explore the relative value of different agent-training algorithms in the Dominion domain.  Specifically, I was interested if it would be possible to use genetic algorithms etc to train an automated player that was good enough to play against a medicore human, or better!  It was also an opportunity to build something larger than a single-use script in python. 
-		</div>
-		<div class="proj_more_info_box"></div>
-	</div>
-	<div class="proj_link_box">
-	<a href="http://fake.site.com"> PDF link </a>
-	</div>
-</div>
 
 </div>
 </div>
@@ -322,20 +398,20 @@ function expand_proj_item (proj_item) {
  	console.log("inside expand.");
 	proj_item.height("auto");
 	proj_item.css("background",accent_color)
-	proj_item.find(".proj_descrip_box").height("auto");
+	proj_item.find(".item_descrip_box").height("auto");
 	//proj_item.css("border", "5px solid " + accent_color );
-	proj_item.find(".proj_blurb").height("auto");
-	proj_item.find(".proj_more_info_box").height("auto");
-    proj_item.find(".proj_more_info_box").text("start date:   last edit date:");
+	proj_item.find(".item_blurb").height("auto");
+	proj_item.find(".item_more_info_box").height("auto");
+    proj_item.find(".item_more_info_box").text("start date:   last edit date:");
 	// don't squish below 150px.   I don't know how to check what the hight /would be/ so my
 	// only choice is to change to auto, check the height, and change back.
-	if(proj_item.find(".proj_descrip_box").height() < 150) {
+	if(proj_item.find(".item_descrip_box").height() < 150) {
 		proj_item.height(150);
-		proj_item.find(".proj_descrip_box").height(150);
-		proj_item.find(".proj_blurb").height(105);
-		proj_item.find(".proj_more_info_box").height(15);
+		proj_item.find(".item_descrip_box").height(150);
+		proj_item.find(".item_blurb").height(105);
+		proj_item.find(".item_more_info_box").height(15);
 	}
-	//proj_item.find(".proj_icon").text("expanded:" + proj_item.find(".proj_descrip_box").height());
+	//proj_item.find(".item_icon").text("expanded:" + proj_item.find(".item_descrip_box").height());
 }
 
 
@@ -343,22 +419,16 @@ function collapse_proj_item (proj_item) {
 	proj_item.height(150);
 	$(".proj_item").css("background","#EEE")
 	//$(".proj_item").css("border","0px hidden #FFF");
-	proj_item.find(".proj_descrip_box").height(150);
-	proj_item.find(".proj_blurb").height(105);
-	proj_item.find(".proj_more_info_box").height(15);
-    proj_item.find(".proj_more_info_box").text("...");
-	//proj_item.find(".proj_icon").text("collapsed.");
+	proj_item.find(".item_descrip_box").height(150);
+	proj_item.find(".item_blurb").height(105);
+	proj_item.find(".item_more_info_box").height(15);
+    proj_item.find(".item_more_info_box").text("...");
+	//proj_item.find(".item_icon").text("collapsed.");
 }
+
 // function collapses all project items, showing only summary content
 function collapse_all_proj_items () {
-	$(".proj_item").height(150);
-	$(".proj_item").css("background","#EEE")
-	//$(".proj_item").css("border","0px hidden #FFF");
-	$(".proj_descrip_box").height(150);
-	$(".proj_blurb").height(105);
-	$(".proj_more_info_box").height(15);
-    $(".proj_more_info_box").text("...");
-	//$(".proj_icon").text("collapsed.");
+	$(".proj_item").each(function() {collapse_proj_item($(this))});
 }
 
 // item click handler does two different things depending on expansion status.
@@ -388,96 +458,64 @@ $(".proj_item").live("click",function (event) {
 
 var exp_status_key = "data-attr-is-selected";
 function select_proj(){
-	$("#cc_proj").css("background","#E00")
-	$("#cc_proj").css("opacity","1")
+	$("#cc_proj").css({"background": "#E00", "opacity":"1"});
 	$("#cc_proj").attr(exp_status_key, true);
+	$("#proj_list_container").show();
 }
 
 function unselect_proj(){
-	$("#cc_proj").css("background","#E88080")
-	$("#cc_proj").css("opacity","0.5")
+	$("#cc_proj").css({"background":"#E88080", "opacity":"0.5"});
  	$("#cc_proj").removeAttr(exp_status_key);
+	$("#proj_list_container").hide();
 }
 
 function select_ident(){
-	$("#cc_ident").css("background","#FFcc33")
-	$("#cc_ident").css("opacity","1")
+	$("#cc_ident").css({"background":"#FFcc33", "opacity":"1"})
 	$("#cc_ident").attr(exp_status_key, true);
+	$("#ident_list_container").show();
 }
 
 function unselect_ident(){
-	$("#cc_ident").css("background","#FFE69a")
-	$("#cc_ident").css("opacity","0.5")
+	$("#cc_ident").css({"background":"#FFE69a", "opacity":"0.5"})
  	$("#cc_ident").removeAttr(exp_status_key);
+	$("#ident_list_container").hide();
 }
 
 function select_idea(){
-	$("#cc_idea").css("background","#11C")
-	$("#cc_idea").css("opacity","1")
+	$("#cc_idea").css({"background":"#11C", "opacity":"1"})
 	$("#cc_idea").attr(exp_status_key, true);
-
+	$("#idea_list_container").show();
 }
 
 function unselect_idea(){
-	$("#cc_idea").css("background","#8888e0")
-	$("#cc_idea").css("opacity","0.5")
+	$("#cc_idea").css({"background":"#8888e0", "opacity":"0.5"})
  	$("#cc_idea").removeAttr(exp_status_key);
+	$("#idea_list_container").hide();
+}
+
+// returns a function that depends only on event, using currying.
+function column_select(event, select_function) {
+	return function(event) {
+	 	// check current select status
+	 	var is_selected = $(this).attr(exp_status_key);
+	 	if(typeof is_selected === "undefined") {
+	 		is_selected = false;
+	 	}
+	 	// if expanded, select and remember
+	 	if(is_selected != false) {
+	 	} else { 	// else, select and remember
+	 		unselect_proj();
+	 		unselect_ident();
+	 		unselect_idea();
+	 		select_function();
+	 	}
+	}
 }
 
 // click handlers for the 3 column buttons
-$("#cc_proj").live("click",function(event) {
- 	// check current select status
- 	var is_selected = $(this).attr(exp_status_key);
- 	if(typeof is_selected === "undefined") {
- 		is_selected = false;
- 	}
- 	// if expanded, select and remember
- 	if(is_selected != false) {
-	 	console.log(" already unselected");
- 	} else { 	// else, select and remember
-	 	console.log(" selecting...");
- 		select_proj();
- 		unselect_ident();
- 		unselect_idea();
- 	}
-})
-
-// click handlers for the 3 column buttons
-$("#cc_ident").live("click",function(event) {
- 	// check current select status
- 	var is_selected = $(this).attr(exp_status_key);
- 	if(typeof is_selected === "undefined") {
- 		is_selected = false;
- 	}
- 	// if expanded, select and remember
- 	if(is_selected != false) {
-	 	console.log(" already unselected");
- 	} else { 	// else, select and remember
-	 	console.log(" selecting...");
- 		unselect_proj();
- 		select_ident();
- 		unselect_idea();
- 	}
-})
-
-
-// click handlers for the 3 column buttons
-$("#cc_idea").live("click",function(event) {
- 	// check current select status
- 	var is_selected = $(this).attr(exp_status_key);
- 	if(typeof is_selected === "undefined") {
- 		is_selected = false;
- 	}
- 	// if expanded, select and remember
- 	if(is_selected != false) {
-	 	console.log(" already unselected");
- 	} else { 	// else, select and remember
-	 	console.log(" selecting...");
- 		unselect_proj();
- 		unselect_ident();
- 		select_idea();
- 	}
-})
+$("#cc_proj").live("click",column_select(event, select_proj))
+$("#cc_ident").live("click",column_select(event, select_ident))
+$("#cc_idea").live("click",column_select(event, select_idea))
 
 // set initial state
  $("#cc_proj").attr(exp_status_key, true);
@@ -493,3 +531,4 @@ $(document).ready(function() {
 
 </body>
 </html>
+<!-- yeah, i wrote this.  whatev --> 

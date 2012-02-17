@@ -82,7 +82,16 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  background:#11C;
 }
 
-#list_container{
+#proj_list_container {
+	display:inline;
+}
+
+#ident_list_container {
+	display:none;
+}
+
+
+.list_container{
  /*background:#EEF;*/
  position:absolute;
  top:530px;
@@ -100,7 +109,17 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  border:1px solid #222;
 }
 
-.proj_icon {
+.ident_item{
+ background:#EEE;
+ float:left;
+ width:851px;
+ height:150px;
+ margin: 0px 0px 30px 0px;
+ cursor:pointer; 
+ border:1px solid #222;
+}
+
+.item_icon {
  float:left;
  background:#FFF;
  width:148px;
@@ -108,28 +127,31 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  border: 1px solid #000;
 }
 
-.proj_descrip_box {
+.item_descrip_box {
  float:left;
  /*background:#FFC;*/
  width:551px;
  height:150px;
  overflow:hidden;
 }
-.proj_title {
+
+.item_title {
 	border-radius: 4px 4px 0 0 ;
 	position: relative;
 	font: bold 22px "Trebuchet MS", Verdana, sans-serif; color: #000;
 	/*background:#CFC;*/
 	height:30px;
 }
-.proj_blurb {
+
+.item_blurb {
 	height:105px;
  	/*background:#CCC;*/
     overflow:hidden;
     border-top: 10px hidden #FFF;
     border-bottom: 10px hidden #FFF;
 }
-.proj_more_info_box {
+
+.item_more_info_box {
 	height:15px;
  	/*background:#999;*/
     overflow:hidden;
@@ -137,7 +159,7 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 
 }
 
-.proj_link_box { 
+.item_link_box { 
  float:left;
  /*background:#CFF;*/
  width:150px;
