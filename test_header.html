@@ -43,12 +43,13 @@ Projects, Identities, Ideas
 			LIDAR / Optical Geometric Autocalibration
 			</div>
 			<div class="item_blurb">
-			Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as a personal interest project, as I wanted to use the data produced by the  <a href="http://grandchallenge.mit.edu"> MIT team's DARPA grand-challenge data </a> in a computer vision project.   The result was a successful completely automated technique that uses multiple stages of refinement to find the best projection matrix and distortion-correction parameters.  After a paper at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an <a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/iccv07hoiem.pdf">improved technique</a> to determine image depth-discontinuities.</div>
-			<div class="item_more_info_box">... click for more ...	</div>
+			Given two streams of data, where one is video, and one is a real-time lidar scan, produce a function that will map the lidar depth data correctly onto the video.  This experiment began as a personal interest project, as I wanted to use the data produced by the  <a href="http://grandchallenge.mit.edu"> MIT team's DARPA grand-challenge data </a> in a computer vision project.   The result of the project was a completely automated technique for finding the best projection matrix and distortion-correction parameters to match the two synchronous datastreams.   The system uses multiple stages of refinement to find a pixel accuracy correspondance while conserving computational resources.   After presentation at an ICCV workshop, this project was put on ice.  The main insight was to attempt to match measured oriented depth discontinuities in the lidar to inferred depth discontinuities in the image.  Possible next steps:  (1) Use an improved refinement procedure making use of the projection equations (2) use an <a href="http://www.cs.uiuc.edu/homes/dhoiem/publications/iccv07hoiem.pdf">improved technique</a> to determine image depth-discontinuities.</div>
+			<div class="item_more_info_box"></div>
+			<div class="item_hidden_info_text">last-edit: 2010</div>
 		</div>
 		<div class="item_link_box">
-		<a href="./papers/lidar_iccv_2008.pdf"> ICCV (PDF) </a><p>
-		<a href="http://fake.site.com"> Source (MATLAB) </a><p>
+		<a href="./papers/lidar_iccv_2008.pdf"> ICCV (PDF) </a>
+		<p id="lidar_optical_source" ><a href="#"> Source (MATLAB) </a><p>
 		<a href="http://en.wikipedia.org/wiki/DARPA_Grand_Challenge"> Darpa GC </a><p>
 		<a href="http://www.youtube.com/playlist?list=PL69755A3E0671306C&feature=plcp"> Videos </a><p>
 
@@ -66,12 +67,13 @@ Projects, Identities, Ideas
 				Real Time Display Ad Purchasing Agents
 			</div>
 			<div class="item_blurb">	
-				DataXu is a small Boston company founded around the idea of using big data and machine learning to develop strong bidding strategies in the real-time auctions for display advertisements on the internet.  The ongoing project is to design, develop, maintain and improve performance bidding strategies in this volitile setting.  Our customers, the advertisers, wish to place advertisements to achieve specific goals, such as low ad-cost-per-conversion view or click, while meeting constraints such as a smooth spending profile and frequency limits per user.  
+				DataXu is a Boston company start-up founded around the idea of using big data and machine learning to develop strong bidding strategies in the real-time auctions for internet display advertisements.  The ongoing project is to design, develop, maintain and improve performance bidding strategies in this volitile setting.  Our customers, the advertisers, wish to place advertisements to achieve specific goals, such as low cost-per-conversion, while meeting constraints such as a smooth spending profile and frequency limits per user.
 			</div>
+			<div class="item_hidden_info_text">Designing the machine learning systems for DataXu is my current full time Job</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="http://www.dataxu.com"> DataXu </a>
 		</div>
 	</div>
 
@@ -88,11 +90,12 @@ Projects, Identities, Ideas
 				In the mid '00s, most visual object detection methods began with a set of positive examples of the target object of interest.  These were images that were cropped neatly around the object, for instance the pedestrians in Dalal + Triggs or the faces of Viola + Jones. It had come took my attention that no one had done a comprehensive study of the effect of the crop scale on detector performance.  The most interesting result of this work is that if you have a fixed sample budget, where each sample returns an average brightness at some position and scale, the best sampling strategy is a multi-scale one, not a strategy that collects a raster at a preferred scale.
 
 			</div>
+			<div class="item_hidden_info_text">2007</div>
 			<div class="item_more_info_box"></div>
 
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/scale_icpr_2007.pdf"> ICPR (PDF) </a>
 		</div>
 	</div>
 
@@ -108,13 +111,13 @@ Projects, Identities, Ideas
 				Biologically motivated object recognition
 			</div>
 			<div class="item_blurb">
-				Lessons learned from studies of biological vision systems have led to several advances in developing scene understanding systems.  CBCL's standard model was using a version of alternating match-and-pool stages before and independant from SIFT, HoG, and Pyramid match.  This PAMI paper summarizes a few years of this work, and it's ties to the biology.  My role was in the tailoring of the general system to applications in object detection, recognition, and scene understanding. 
-
+				Lessons learned from studies of biological vision systems have led to advances in developing artificial scene understanding systems.  CBCL's standard model, mimicing ventral vision areas LGN through V1 and V4, was using a version of alternating match-and-pool scale-free filters before and independant from SIFT, HoG, and Pyramid match became state-of-the-art.  The PAMI paper summarizes a few years of this work, and it's ties to the biology.  Working in and around the neuroscience was some of the most interesting collaborative work I did as a course 6 Ph.D. student. 
 			</div>
+			<div class="item_hidden_info_text">2000-2008</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/pami_2007.pdf">PAMI (PDF)</a>
 		</div>
 	</div>
 
@@ -129,16 +132,36 @@ Projects, Identities, Ideas
 				Gestalt Image Representations
 			</div>
 			<div class="item_blurb">
-				The mid '00s were a period under which the vision community coalesced around image features with very self similar qualities.  Most production systems were using some variant of histograms of oriented energy as input to their generic machine learning systems.  This project aimed to attempt to build image features which capture information that we know the human visual system is snappy at acquiring.  Specifically, detectors for continuity, closure, symmetry, and repetition were created.  It was shown that of these, continuity detection is key to improving object detection performance in real systems.  In a side project that was never condensed into a prose artifact, along with Aude Olivia I was able to show that a simple histogram of oriented energy feature was able to account for much of the psychophysical results in human symmetry detection. 
-
+				During the mid '00s the vision community concentrated around image features with self similar qualities.  Most production systems were using some variant of histograms of oriented energy as input features, which were then passed on to generic machine learning systems.  This project aimed to build and test image features capturing information that we know the human visual system is snappy at acquiring.  Specifically, detectors for continuity, closure, symmetry, and repetition were created.  It was shown that of these, continuity detection is key to improving object detection performance in real systems.  In a side project that was never condensed into a prose artifact, along with Aude Olivia I was able to show that a simple histogram of oriented energy feature was able to account for much of the psychophysical results in human symmetry detection. 
 			</div>
+			<div class="item_hidden_info_text">2007</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/gestalt_cvpr_2007.pdf"> CVPR (PDF) </a><p>
+		<a href="./code/gestalt_code_matlab.tar.gz"> code (MATLAB.gz) </a>
 		</div>
 	</div>
 
+	<div class="proj_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/proj/URGENT.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				DARPA Urgent
+			</div>
+			<div class="item_blurb">
+				MIT CBCL was proud to participate in The DARPA Urban Reasoning and Geospatial ExploitatioN (URGENT) program.  This project focused on leveraging airborne optical and lidar imagery, with the goal of detecting and recognizing 150 unique object types.   My work focused on modifying our object recognition to function in this new domain.  Big changes included having a nearly fixed scale, unknown in-plane rotation, and the addition of depth information.
+			</div>
+			<div class="item_hidden_info_text">2007-2009</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		<a href="https://www.fbo.gov/index?s=opportunity&mode=form&id=7a5265dcbdfc80d0090e9dc954838e4d&tab=core&_cview=1"> Darpa Project Page</a><p>
+		</div>
+	</div>
 
 	<div class="proj_item">
 		<div class="item_icon">
@@ -150,13 +173,15 @@ Projects, Identities, Ideas
 				Ph.D. Thesis: StreetScenes
 			</div>
 			<div class="item_blurb">
-				My Ph.D. thesis summarized my work in biological image understanding and it's application to real world unconstrained object recognition.  The thesis began with the acquisition and labeling of around 3,500 high resolution images of Cambridge taken at street level from a digital camera.  These images were hand labeled by a team of coached workers, who took care to label the 9 target objects using a standardized set of rules.  I then demonstrated a complete end-to-end system capable of labeling a variety of different types of objects in the StreetScenes database using general machine learning tools and several different image representations.  This served as a the platform for a number of studies into image features, context, search and retrieval, and so on. 
+				My Ph.D. thesis summarized my work in biological image understanding and its application to real world unconstrained object recognition.  The thesis began with the acquisition and labeling of around 3,500 high resolution images of Cambridge taken at street level from a digital camera.  These images were hand labeled by a team of coached workers, who took care to label the 9 target objects using a standardized set of rules.  I then demonstrated a complete end-to-end system capable of labeling a variety of different types of objects in the StreetScenes database using general machine learning tools and several different image representations.  This served as a the platform for a number of studies into image features, context, search and retrieval, and so on. 
 
 			</div>
+			<div class="item_hidden_info_text">2002-2006</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/thesis_bileschi.pdf"> MIT Ph.D. Thesis (PDF)</a><p>
+		<a href="http://cbcl.mit.edu/software-datasets/streetscenes/"> StreetScenes Database</a>
 		</div>
 	</div>
 
@@ -170,12 +195,13 @@ Projects, Identities, Ideas
 				A Critical View of Context
 			</div>
 			<div class="item_blurb">
-				In this controversial project, I worked with Lior Wolf to show that context is a useful feature, but only so far.  We claimed that once the image features were strong enough, contextual cues were no longer helpful.  For instance, if you clearly see a 1987 Buick Regal hanging from a crane, yes it's out of context, but it is in fact a car.  The contextual cues are useful only in so far as they can help the observer to focus limited computational resources where they are most likely to summarize the scene quickly.  If the detected objects are clear and well described, contextual cues are no longer helpful in the refining of the object detections. 
+				In this controversial project, I worked with Dr. Lior Wolf to show that context is a useful feature, but only so far.  We claimed that once the image features were strong enough, contextual cues were no longer helpful.  For instance, if you clearly see a 1987 Buick Regal hanging from a crane, yes it's out of context, but it is in fact a car.  The contextual cues are useful only in so far as they can help the observer to focus limited computational resources where they are most likely to summarize the scene quickly.  If the detected objects are clear and well described, contextual cues are no longer helpful in the refining of the object detections. 
 			</div>
+			<div class="item_hidden_info_text">2005-2006</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/context.pdf"> IJCV (PDF)</a>
 		</div>
 	</div>
 
@@ -193,10 +219,11 @@ Projects, Identities, Ideas
 				This project explored different ways of combining selectivity and invariance building computational structures in the computer vision domain. 
 
 			</div>
+			<div class="item_hidden_info_text">2006</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/hieararch_cvpr_2006.pdf"> CVPR (PDF)</a>
 		</div>
 	</div>
 
@@ -211,12 +238,13 @@ Projects, Identities, Ideas
 				Component Based Face Detection
 			</div>
 			<div class="item_blurb">
-				Early face detection and recognition systems took a global view of the face-as-image.  The entire image was represented as a vector and then processed.  This work described a system wherein individual facial characteristics, such as the eye, nose, etc. were represented separately, using a floating system of parts which is more invariant to transformations of the 3D face.  It seems that modern systems, as of 2012, pretty much all use such an approach.
+				Early face detection and recognition systems took a global view of the face-as-image.  The entire image was represented as a vector and then processed.  This work described a system wherein individual facial characteristics, such as the eye, nose, etc. were represented separately, using a floating system of parts which is more invariant to transformations of the 3D face.  It seems that modern systems, as of 2012, nearly all use this approach.
 			</div>
+			<div class="item_hidden_info_text">2003</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/amfg_2003.pdf"> AMFG (PDF)</a>
 		</div>
 	</div>
 
@@ -235,10 +263,11 @@ Projects, Identities, Ideas
 			<div class="item_blurb">
 				This was a continuing work I did with Lior Wolf when he first arrived at MIT.  The work surrounded a linear algebra based algorithm for reducing the size of data while retaining information important to the classification task.  It was interesting, but mostly his baby.
 			</div>
+			<div class="item_hidden_info_text">2005</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/variable_weighting.pdf"> CVPR (PDF) </a>
 		</div>
 	</div>
 
@@ -257,10 +286,11 @@ Projects, Identities, Ideas
 			<div class="item_blurb">
 				Similar in spirit to my Ph.D. thesis, this project was a summary of my attempt to build an end-to-end vision system including detecting a variety of different types of objects (cars, trees, buildings, pedestrians, etc.), and including contextual cues for improved computational performance.  The system performed well at the time, and led to a oral presentation at that year's BMVC.
 			</div>
+			<div class="item_hidden_info_text">2005</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="./papers/unified_system_bmvc_05.pdf"> CVPR (PDF) </a>
 		</div>
 	</div>
 
@@ -276,12 +306,13 @@ Projects, Identities, Ideas
 				Personal Matlab Library
 			</div>
 			<div class="item_blurb">
-				Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the tools we have today.  At the time, however, I had built up a messy, but useful collection of common library functions.  Things like dirfull, a dir command that also keeps track of full path names and other useful system file info; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel, or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Much of it is still heavily project-dependent, and unlikely to be useful in other contexts.  That said, there are still some gems in there that I will continue to use until MATLAB reproduces the functionality in their std lib.
+				Most of my work in graduate school was done in MATLAB.  Looking back, I wish I had available the more advanced tools we have today.  At the time, however, I had built up a messy but useful collection of common library functions.  Things like dirfull, a dir command that also keeps track of full path names and other useful system file info; maxfilter, an image processing operation which transforms images to their local maximum value, parameterized by a kernel; resolveMissingOptions, a tool allowing structured parameter passing in a key value map with defaults; or FourLayerColor, a way of visualizing sparse 3D matricies as images.  I recently went through this pile of old code and tried to curate it a bit.  Some of it is heavily project-dependent, and unlikely to be useful in other contexts.  That said, there are gems in there that I will definitely continue to use until MATLAB reproduces the functionality in their std lib.
 			</div>
+			<div class="item_hidden_info_text">mostly 2002 - 2008, some minor work afterwards</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="https://github.com/bileschi/Matlab-Useful-Stuff"> github (MATLAB) </a>
 		</div>
 	</div>
 
@@ -300,10 +331,11 @@ Projects, Identities, Ideas
 
 				Dominion is a multi-player card game where players take turns building a deck of cards.  The rules are clear, there is no randomness, but the game is variable in that the set of available cards changes each game.  The goal of this project was to explore the relative value of different agent-training algorithms in the Dominion domain.  Specifically, I was interested if it would be possible to use genetic algorithms etc to train an automated player that was good enough to play against a medicore human, or better!  It was also an opportunity to build something larger than a single-use script in python. 
 			</div>
+			<div class="item_hidden_info_text">2012. incomplete.</div>
 			<div class="item_more_info_box"></div>
 		</div>
 		<div class="item_link_box">
-		<a href="http://fake.site.com"> PDF link </a>
+		<a href="https://github.com/bileschi/SevenLanguagesSevenWeeks/tree/master/python/dominion"> github (Python) </a>
 		</div>
 	</div>
 </div>
@@ -320,7 +352,7 @@ Projects, Identities, Ideas
 				Curriculum Vitae / Resume
 			</div>
 			<div class="item_blurb">
-				
+				You may additionally e-mail me at bileschi@gmail.com
 			</div>
 			<div class="item_more_info_box"></div>
 		</div>
@@ -440,7 +472,7 @@ function expand_proj_item (proj_item) {
 	//proj_item.css("border", "5px solid " + accent_color );
 	proj_item.find(".item_blurb").height("auto");
 	proj_item.find(".item_more_info_box").height("auto");
-    proj_item.find(".item_more_info_box").text("start date:   last edit date:");
+    proj_item.find(".item_more_info_box").text(proj_item.find(".item_hidden_info_text").text());
 	// don't squish below 150px.   I don't know how to check what the hight /would be/ so my
 	// only choice is to change to auto, check the height, and change back.
 	if(proj_item.find(".item_descrip_box").height() < 150) {
@@ -555,9 +587,15 @@ $("#cc_proj").live("click",column_select(event, select_proj))
 $("#cc_ident").live("click",column_select(event, select_ident))
 $("#cc_idea").live("click",column_select(event, select_idea))
 
+$("#cc_idea").live("click",column_select(event, select_idea))
+$("#lidar_optical_source").live("click", function(event)
+{
+   alert("Please contact me at bileschi@gmail.com for access to the LidarOptical calibration code.");
+})
+
 // set initial state
- unselect_proj();
- select_ident();
+ select_proj();
+ unselect_ident();
  unselect_idea();
 
 

@@ -159,6 +159,10 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 
 }
 
+.item_hidden_info_text{
+	display:none;
+}
+
 .item_link_box { 
  float:left;
  /*background:#CFF;*/
