@@ -330,14 +330,52 @@ Projects, Identities, Ideas
 		</div>
 	</div>
 
-	<div id="fb_ident_item" class="ident_item">
+	<div id="li_ident_item" class="ident_item">
 		<div class="item_icon">
-			Facebook Icon goes here.
+			<img src="./img/item-icons/ident/linkedin_icon.gif" width="148" height="148">
 		</div>
 
 		<div class="item_descrip_box">
 			<div class="item_title">
-				My Public Facebook Page
+				Public Linkedin Profile
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+			<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+			<script type="IN/Share" data-counter="right"></script>
+		</div>
+	</div>
+
+	<div id="g_ident_item" class="ident_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/ident/google_plus.png" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Public Google Plus Profile
+			</div>
+			<div class="item_blurb">
+				
+			</div>
+			<div class="item_more_info_box"></div>
+		</div>
+		<div class="item_link_box">
+		</div>
+	</div>
+
+	<div id="fb_ident_item" class="ident_item">
+		<div class="item_icon">
+			<img src="./img/item-icons/ident/facebook.jpg" width="148" height="148">
+		</div>
+
+		<div class="item_descrip_box">
+			<div class="item_title">
+				Public Facebook Profile
 			</div>
 			<div class="item_blurb">
 				
@@ -350,12 +388,12 @@ Projects, Identities, Ideas
 
 	<div id="tw_ident_item" class="ident_item">
 		<div class="item_icon">
-			Twitter Icon goes here.
+			<img src="./img/item-icons/ident/twitter_bird.png" width="148" height="148">
 		</div>
 
 		<div class="item_descrip_box">
 			<div class="item_title">
-				My Public Twitter
+				Public Twitter Feed
 			</div>
 			<div class="item_blurb">
 				
@@ -365,15 +403,14 @@ Projects, Identities, Ideas
 		<div class="item_link_box">
 		</div>
 	</div>
-
-	<div id="g_ident_item" class="ident_item">
+	<div id="tw_ident_item" class="ident_item">
 		<div class="item_icon">
-			Google Plus Icon goes here.
+			<img src="./img/item-icons/ident/academia.png" width="148" height="148">
 		</div>
 
 		<div class="item_descrip_box">
 			<div class="item_title">
-				My Public Google Plus
+				Academia.edu Profile
 			</div>
 			<div class="item_blurb">
 				
@@ -383,6 +420,7 @@ Projects, Identities, Ideas
 		<div class="item_link_box">
 		</div>
 	</div>
+
 
 </div>
 </div>
@@ -518,8 +556,8 @@ $("#cc_ident").live("click",column_select(event, select_ident))
 $("#cc_idea").live("click",column_select(event, select_idea))
 
 // set initial state
- $("#cc_proj").attr(exp_status_key, true);
- unselect_ident();
+ unselect_proj();
+ select_ident();
  unselect_idea();
 
 
