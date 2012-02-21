@@ -6,6 +6,7 @@
 <title>Dont call it a comeback</title><link href="style2.css" rel="stylesheet" type="text/css" />
 </head>
 
+
 <body>
 <div id="wrap">
 <div id="header">
@@ -27,8 +28,8 @@ Projects, Identities, Ideas
 
 <div id="cc_container">
 	<div id="cc_proj" class="cc_button">Projects</div>
-	<div id="cc_ident" class="cc_button">Identities</div>
-	<div id="cc_idea" class="cc_button">Ideas</div>
+	<div id="cc_ident" class="cc_button">Public Personas</div>
+	<!-- <div id="cc_idea" class="cc_button">Ideas</div> -->
 </div>
 
 <div id="proj_list_container" class="list_container">
@@ -529,38 +530,40 @@ $(".proj_item").live("click",function (event) {
 
 
 var exp_status_key = "data-attr-is-selected";
+var cc_button_fg_color = "#e22";
+var cc_button_bg_color = "none";
 function select_proj(){
-	$("#cc_proj").css({"background": "#E00", "opacity":"1"});
+	$("#cc_proj").css({"background": cc_button_fg_color, "opacity":"1"});
 	$("#cc_proj").attr(exp_status_key, true);
 	$("#proj_list_container").show();
 }
 
 function unselect_proj(){
-	$("#cc_proj").css({"background":"#E88080", "opacity":"0.5"});
+	$("#cc_proj").css({"background": cc_button_bg_color, "opacity":"0.85"});
  	$("#cc_proj").removeAttr(exp_status_key);
 	$("#proj_list_container").hide();
 }
 
 function select_ident(){
-	$("#cc_ident").css({"background":"#FFcc33", "opacity":"1"})
+	$("#cc_ident").css({"background": cc_button_fg_color, "opacity":"1"})
 	$("#cc_ident").attr(exp_status_key, true);
 	$("#ident_list_container").show();
 }
 
 function unselect_ident(){
-	$("#cc_ident").css({"background":"#FFE69a", "opacity":"0.5"})
+	$("#cc_ident").css({"background": cc_button_bg_color, "opacity":"0.85"})
  	$("#cc_ident").removeAttr(exp_status_key);
 	$("#ident_list_container").hide();
 }
 
 function select_idea(){
-	$("#cc_idea").css({"background":"#11C", "opacity":"1"})
+	$("#cc_idea").css({"background": cc_button_fg_color, "opacity":"1"})
 	$("#cc_idea").attr(exp_status_key, true);
 	$("#idea_list_container").show();
 }
 
 function unselect_idea(){
-	$("#cc_idea").css({"background":"#8888e0", "opacity":"0.5"})
+	$("#cc_idea").css({"background": cc_button_bg_color, "opacity":"0.85"})
  	$("#cc_idea").removeAttr(exp_status_key);
 	$("#idea_list_container").hide();
 }
