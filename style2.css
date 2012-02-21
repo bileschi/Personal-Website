@@ -34,12 +34,15 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  height:100px;
 }
 #name_and_sec_right{
- background:#CFC;
  position:absolute;
  top:0;
  right:0;
  width:430px;
  height:100px;
+ text-align: center;
+ line-height:95px;
+ vertical-align: middle;
+ font: 40px Verdana, Arial, Helvetica, sans-serif; color:#443311;
 }
 
 #cc_container{
