@@ -118,17 +118,25 @@ body {background:#000 url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
  background:#EEE;
  float:left;
  width:851px;
- height:150px;
+ height:50px;
  margin: 0px 0px 30px 0px;
- cursor:pointer; 
+ /*cursor:pointer;*/ 
  border:1px solid #222;
 }
 
-.item_icon {
+.proj_item .item_icon {
  float:left;
  background:#FFF;
  width:148px;
  height:148px;
+ border: 1px solid #000;
+}
+
+.ident_item .item_icon {
+ float:left;
+ background:#FFF;
+ width:48px;
+ height:48px;
  border: 1px solid #000;
 }
 
