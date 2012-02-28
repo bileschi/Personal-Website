@@ -142,10 +142,11 @@ body {background:#FFF url(img/bg/hex_80.jpg) center top repeat; font: 14px Verda
 
 .item_descrip_box {
  float:left;
- /*background:#FFC;*/
- width:551px;
+ /*background:#F00;*/ 
+ width:531px;
  height:150px;
  overflow:hidden;
+ padding: 0 10px 0 10px;
 }
 
 .item_title {
